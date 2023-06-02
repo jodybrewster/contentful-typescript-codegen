@@ -50,6 +50,8 @@ function renderContentTypeFields(fields: Field[], localization: boolean): string
         RichText: renderRichText,
         Symbol: renderSymbol,
         Text: renderSymbol,
+        ResourceLink: renderLink,
+
       }
 
       return renderField(field, functionMap[field.type](field), localization)

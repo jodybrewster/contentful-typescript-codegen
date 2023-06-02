@@ -43,6 +43,8 @@ function renderContentTypeFields(fields: Field[]): string {
         RichText: renderRichText,
         Symbol: renderSymbol,
         Text: renderSymbol,
+        ResourceLink: renderLink,
+
       }
 
       return renderField(field, functionMap[field.type](field))
